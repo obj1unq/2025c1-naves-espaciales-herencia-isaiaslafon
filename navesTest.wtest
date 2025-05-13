@@ -108,7 +108,8 @@ describe "Nave de combate" {
 	}
 
 	test "no esta invisible en ataque" {
-		naveEnAtaque.velocidad(20000)
+		naveEnAtaque.acelerar(20000)
+                //naveEnAtaque.propulsar()
 		assert.notThat(naveEnAtaque.estaInvisible())
 	}
 
